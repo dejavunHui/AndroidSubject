@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/headText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="300dp"
+            android:hint="测试文字,测试文字"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:minLines="5"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="颜色"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/redButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="红色"
+                android:textSize="25sp"
+                android:textColor="#ff0000"/>
+
+            <Button
+                android:id="@+id/greenButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿色"
+                android:textSize="25sp"
+                android:textColor="#00ff00"/>
+
+            <Button
+                android:id="@+id/blueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蓝色"
+                android:textSize="25sp"
+                android:textColor="#0000ff"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大小"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/eButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="增大"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/sButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="缩小"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="样式"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/blodButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加粗"
+                android:textStyle="bold"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/italicButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="倾斜"
+                android:textStyle="italic"
+                android:textSize="25sp"/>
+            <Button
+                android:id="@+id/defaultButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认"
+                android:textStyle="normal"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                android:textSize="25sp"/>
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="300dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

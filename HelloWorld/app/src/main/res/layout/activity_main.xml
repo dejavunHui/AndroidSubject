@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"
+            android:text="欢迎参加手机软件设计赛" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="用户名"
+            android:textColorHint="#2af"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="密码"
+            android:textColorHint="#2af"
+            android:textSize="20dp"
+            android:textAlignment="center"/>s
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="登录"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="注册"
+            android:textColorHint="@color/colorAccent"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="如有疑问请联系我们 \n
+            联系电话:+86 0791-878272192 \n
+            E-mail:iet2011@163.com \n
+            网址:http://iet.ixute.cn"
+            android:textColor="#00ff22"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:paddingTop="20dp"
+            android:autoLink="all"
+            android:textColorLink="@color/colorAccent"/>
+
+
+</LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="4" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="5">
+
+            <TableRow android:theme="@style/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+
+                <Button android:text="MC" android:layout_weight="1" />
+                <Button android:text="MR" android:layout_weight="1" />
+                <Button android:text="MS" android:layout_weight="1" />
+                <Button android:text="M+" android:layout_weight="1" />
+                <Button android:text="M-" android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow android:theme="@style/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <Button android:text="←" android:layout_weight="1"/>
+                <Button android:text="CE" android:layout_weight="1"/>
+                <Button android:text="C" android:layout_weight="1"/>
+                <Button android:text="±" android:layout_weight="1"/>
+                <Button android:text="√" android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow android:theme="@style/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <Button android:text="7" android:layout_weight="1"/>
+                <Button android:text="8" android:layout_weight="1"/>
+                <Button android:text="9" android:layout_weight="1"/>
+                <Button android:text="/" android:layout_weight="1"/>
+                <Button android:text="%" android:layout_weight="1"/>
+            </TableRow>
+
+            <TableRow android:theme="@style/btn1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                >
+                <Button android:text="4" android:layout_weight="1"/>
+                <Button android:text="5" android:layout_weight="1"/>
+                <Button android:text="6" android:layout_weight="1"/>
+                <Button android:text="*" android:layout_weight="1"/>
+                <Button android:text="1/x" android:layout_weight="1"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                style="@style/btn1"
+                android:text="1"
+                android:id="@+id/number1"
+                />
+
+            <Button
+                style="@style/btn1"
+                android:text="2"
+                android:id="@+id/number2"
+                android:layout_toRightOf="@+id/number1"
+                android:layout_alignTop="@id/number1"
+                />
+            <Button
+                style="@style/btn1"
+                android:text="3"
+                android:id="@+id/number3"
+                android:layout_toRightOf="@id/number2"
+                android:layout_alignTop="@+id/number2"
+                />
+
+            <Button
+                style="@style/btn1"
+                android:text="-"
+                android:id="@+id/jian"
+                android:layout_toRightOf="@id/number3"
+                android:layout_alignTop="@+id/number3"
+                />
+
+            <Button
+                style="@style/btn2"
+                android:text="="
+                android:id="@+id/deng"
+                android:layout_toRightOf="@id/jian"
+                />
+
+            <Button
+                style="@style/btn3"
+                android:text="0"
+                android:id="@+id/number0"
+                android:layout_below="@+id/number1"
+                 />
+
+            <Button
+                style="@style/btn1"
+                android:text="."
+                android:id="@+id/dian"
+                android:layout_toRightOf="@id/number0"
+                android:layout_alignTop="@+id/number0"
+                 />
+
+            <Button
+                style="@style/btn1"
+                android:text="+"
+                android:id="@+id/jia"
+                android:layout_toRightOf="@id/dian"
+                android:layout_alignTop="@+id/dian"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
